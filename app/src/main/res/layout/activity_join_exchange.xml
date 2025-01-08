@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/join_exchange_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unirse a un intercambio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Campo para ingresar la clave del intercambio -->
+    <EditText
+        android:id="@+id/join_exchange_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Clave del intercambio"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para confirmar -->
+    <Button
+        android:id="@+id/btn_confirm_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unirse"
+        android:padding="12dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Nombre del usuario -->
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Botón para crear un intercambio -->
+    <Button
+        android:id="@+id/btn_create_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear un intercambio"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón para ver los intercambios -->
+    <Button
+        android:id="@+id/btn_view_exchanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver intercambios"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón para unirse a un intercambio -->
+    <Button
+        android:id="@+id/btn_join_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unirse a un intercambio"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón para gestionar un intercambio -->
+    <Button
+        android:id="@+id/btn_manage_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestionar intercambio"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón para cerrar sesión -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:padding="12dp" />
+
+</LinearLayout>
