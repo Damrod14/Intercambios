@@ -3,21 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="8dp">
+    android:padding="12dp">
 
+    <!-- Nombre del participante -->
     <TextView
         android:id="@+id/participant_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Nombre del participante"
-        android:textSize="16sp" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/green_tree"
+        android:paddingEnd="8dp" />
+
+    <!-- CheckBox para seleccionar al participante -->
     <CheckBox
         android:id="@+id/participant_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone" /> <!-- Visibilidad predeterminada -->
-
-
+        android:visibility="gone"/>
 </LinearLayout>
-

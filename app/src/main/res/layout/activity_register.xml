@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
 
     <LinearLayout
         android:orientation="vertical"
@@ -9,49 +10,74 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
+        <!-- Título -->
         <TextView
             android:id="@+id/registerTitle"
             android:text="Registrar Cuenta"
-            android:textSize="24sp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_festive"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="24dp" />
 
+        <!-- Campo de nombre -->
         <EditText
             android:id="@+id/nameEditText"
             android:hint="Nombre"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/green_tree"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Campo de alias -->
         <EditText
             android:id="@+id/aliasEditText"
             android:hint="Alias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/green_tree"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Campo de correo electrónico -->
         <EditText
             android:id="@+id/registerEmailEditText"
             android:hint="Correo Electrónico"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/green_tree"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Campo de contraseña -->
         <EditText
             android:id="@+id/registerPasswordEditText"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/green_tree"
+            android:layout_marginBottom="24dp" />
 
+        <!-- Botón de registro -->
         <Button
             android:id="@+id/registerButton"
             android:text="Registrarse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"/>
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:backgroundTint="@color/red_festive"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 </ScrollView>

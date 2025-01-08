@@ -3,16 +3,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#F5F5F5">
+    android:background="@drawable/background_image">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/tv_menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menú Principal"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/red_festive"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
 
     <!-- Nombre del usuario -->
     <TextView
         android:id="@+id/tv_user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido"
-        android:textSize="24sp"
-        android:textColor="#000"
+        android:text="¡Bienvenido, Usuario!"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:textColor="@color/green_tree"
+        android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:paddingBottom="16dp" />
 
@@ -22,8 +36,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crear un intercambio"
-        android:padding="12dp"
-        android:layout_marginBottom="12dp" />
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/red_festive"
+        android:textColor="?attr/colorOnPrimary" />
 
     <!-- Botón para ver los intercambios -->
     <Button
@@ -31,8 +48,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ver intercambios"
-        android:padding="12dp"
-        android:layout_marginBottom="12dp" />
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/green_tree"
+        android:textColor="@color/white" />
 
     <!-- Botón para unirse a un intercambio -->
     <Button
@@ -40,8 +60,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Unirse a un intercambio"
-        android:padding="12dp"
-        android:layout_marginBottom="12dp" />
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/blue_winter"
+        android:textColor="@color/white" />
 
     <!-- Botón para gestionar un intercambio -->
     <Button
@@ -49,8 +72,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gestionar intercambio"
-        android:padding="12dp"
-        android:layout_marginBottom="12dp" />
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="?attr/colorOnPrimary" />
 
     <!-- Botón para cerrar sesión -->
     <Button
@@ -58,6 +84,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cerrar sesión"
-        android:padding="12dp" />
-
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/gold_shimmer"
+        android:textColor="@color/black" />
 </LinearLayout>

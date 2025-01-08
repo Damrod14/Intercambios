@@ -71,6 +71,6 @@
         android:layout_height="wrap_content"
         android:text="Registrarse"
         android:textSize="20dp"
-        android:backgroundTint="?attr/colorSecondary"
-        android:textColor="?attr/colorOnSecondary" />
+        android:backgroundTint="@color/gold_shimmer"
+        android:textColor="@color/black" />
 </LinearLayout>

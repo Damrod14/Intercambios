@@ -3,17 +3,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#F5F5F5">
+    android:background="@drawable/background_image">
 
+    <!-- Título -->
     <TextView
         android:id="@+id/join_exchange_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Unirse a un intercambio"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:textStyle="bold"
+        android:textColor="@color/red_festive"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="16dp" />
+        android:paddingBottom="24dp" />
 
     <!-- Campo para ingresar la clave del intercambio -->
     <EditText
@@ -21,8 +23,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Clave del intercambio"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="@color/green_tree"
+        android:layout_marginBottom="24dp" />
 
     <!-- Botón para confirmar -->
     <Button
@@ -30,8 +34,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Unirse"
-        android:padding="12dp"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:textColor="@android:color/white" />
-
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:backgroundTint="@color/red_festive"
+        android:textColor="?attr/colorOnPrimary" />
 </LinearLayout>

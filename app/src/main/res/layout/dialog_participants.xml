@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/background_image">
 
+    <!-- Título de la sección -->
+    <TextView
+        android:id="@+id/tv_participants_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Participantes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/red_festive"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView para mostrar participantes -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_participants"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical" />
 
+    <!-- Botón flotante para añadir participantes -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_participant_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:src="@drawable/ic_add"
-        android:contentDescription="Añadir participante" />
-
+        android:contentDescription="Añadir participante"
+        app:backgroundTint="@color/green_tree"
+        app:tint="@color/white" />
 </LinearLayout>
