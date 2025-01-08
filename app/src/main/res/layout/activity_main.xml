@@ -15,7 +15,7 @@
         android:layout_marginBottom="16dp"
         android:text="NavidApp"
         android:textColor="?attr/colorOnBackground"
-        android:textSize="48sp"
+        android:textSize="60sp"
         android:textStyle="bold" />
 
     <!-- Subtítulo -->
@@ -27,7 +27,7 @@
         android:layout_marginBottom="32dp"
         android:text="Intercambios Navideños"
         android:textColor="@color/red_festive"
-        android:textSize="24sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <!-- Campo de correo -->
@@ -36,7 +36,8 @@
         android:hint="Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:padding="16dp"
+        android:textSize="20dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/green_tree" />
 
@@ -47,7 +48,8 @@
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:padding="16dp"
+        android:textSize="20dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="@color/green_tree" />
 
@@ -57,7 +59,8 @@
         android:text="Iniciar Sesión"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="20dp"
         android:backgroundTint="@color/red_festive"
         android:textColor="?attr/colorOnPrimary" />
 
@@ -67,6 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrarse"
+        android:textSize="20dp"
         android:backgroundTint="?attr/colorSecondary"
         android:textColor="?attr/colorOnSecondary" />
 </LinearLayout>
