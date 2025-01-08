@@ -2,22 +2,71 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
-    <EditText android:id="@+id/email"
+    android:paddingTop="100dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_image">
+
+    <!-- Título de la aplicación -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="NavidApp"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/app_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:text="Intercambios Navideños"
+        android:textColor="@color/red_festive"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Campo de correo -->
+    <EditText
+        android:id="@+id/email"
         android:hint="Email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/green_tree" />
+
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/password"
         android:hint="Password"
         android:inputType="textPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button android:id="@+id/login_button"
-        android:text="Login"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green_tree" />
+
+    <!-- Botón de inicio de sesión -->
+    <Button
+        android:id="@+id/login_button"
+        android:text="Iniciar Sesión"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button android:id="@+id/register_button"
-        android:text="Register"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/red_festive"
+        android:textColor="?attr/colorOnPrimary" />
+
+    <!-- Botón de registro -->
+    <Button
+        android:id="@+id/register_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:backgroundTint="?attr/colorSecondary"
+        android:textColor="?attr/colorOnSecondary" />
 </LinearLayout>
