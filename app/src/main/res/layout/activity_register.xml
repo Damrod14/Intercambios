@@ -14,6 +14,7 @@
         <TextView
             android:id="@+id/registerTitle"
             android:text="Registrar Cuenta"
+            android:layout_marginTop="20dp"
             android:textSize="32sp"
             android:textStyle="bold"
             android:textColor="@color/red_festive"
@@ -21,11 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green_tree" />
 
         <!-- Campo de nombre -->
         <EditText
             android:id="@+id/nameEditText"
             android:hint="Nombre"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
@@ -67,7 +74,11 @@
             android:textSize="18sp"
             android:backgroundTint="@color/green_tree"
             android:layout_marginBottom="24dp" />
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green_tree" />
         <!-- Botón de registro -->
         <Button
             android:id="@+id/registerButton"
