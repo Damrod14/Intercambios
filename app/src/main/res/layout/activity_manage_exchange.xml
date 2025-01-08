@@ -1,87 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/background_image">
+    android:background="@drawable/background_image"
+    android:fillViewport="true">
 
-    <!-- Lista de intercambios -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Selecciona un intercambio"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/red_festive"
-        android:layout_marginBottom="8dp" />
+        android:padding="16dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_exchanges"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:scrollbars="vertical" />
+        <!-- Lista de intercambios -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un intercambio"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_festive"
+            android:layout_marginBottom="8dp" />
 
-    <!-- Lista de participantes -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Eliminar Participantes actuales"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/red_festive"
-        android:layout_marginBottom="8dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_exchanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:scrollbars="vertical"
+            android:nestedScrollingEnabled="false" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_current_participants"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:scrollbars="vertical" />
+        <!-- Lista de participantes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Participantes actuales"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_festive"
+            android:layout_marginBottom="8dp" />
 
-    <!-- Lista de usuarios no en el intercambio -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Añadir usuarios al intercambio"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/red_festive"
-        android:layout_marginBottom="8dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_current_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbars="vertical"
+            android:nestedScrollingEnabled="false" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_available_users"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:scrollbars="vertical" />
+        <!-- Lista de usuarios no en el intercambio -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir usuarios al intercambio"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_festive"
+            android:layout_marginBottom="8dp" />
 
-    <!-- Botón para mostrar diálogo de añadir participantes -->
-    <Button
-        android:id="@+id/btn_show_add_participant_dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Añadir Participantes"
-        android:textSize="20sp"
-        android:padding="12dp"
-        android:layout_margin="16dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/green_tree"
-        android:textColor="?attr/colorOnSecondary" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_available_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:scrollbars="vertical"
+            android:nestedScrollingEnabled="false" />
 
-    <!-- Botón para añadir usuarios seleccionados -->
-    <Button
-        android:id="@+id/btn_add_selected_users"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Añadir Usuarios"
-        android:textSize="20sp"
-        android:padding="12dp"
-        android:layout_margin="16dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/green_tree"
-        android:textColor="?attr/colorOnSecondary" />
+        <!-- Botón para mostrar diálogo de añadir participantes -->
+        <Button
+            android:id="@+id/btn_show_add_participant_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir Participantes"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/green_tree"
+            android:textColor="?attr/colorOnSecondary" />
 
-</LinearLayout>
+        <!-- Botón para añadir usuarios seleccionados -->
+        <Button
+            android:id="@+id/btn_add_selected_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir Usuarios"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/green_tree"
+            android:textColor="?attr/colorOnSecondary" />
+    </LinearLayout>
+</ScrollView>

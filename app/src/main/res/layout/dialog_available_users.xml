@@ -1,27 +1,33 @@
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/background_image">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:fillViewport="true">
 
-    <!-- Título de la sección -->
-    <TextView
-        android:id="@+id/tv_available_users_title"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Usuarios disponibles"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/red_festive"
-        android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp">
 
-    <!-- RecyclerView para usuarios disponibles -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_available_users"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical" />
-</LinearLayout>
+        <!-- Título de la sección -->
+        <TextView
+            android:id="@+id/tv_available_users_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuarios disponibles"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_festive"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- RecyclerView para usuarios disponibles -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_available_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</ScrollView>

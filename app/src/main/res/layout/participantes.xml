@@ -1,40 +1,46 @@
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@drawable/background_image">
+    android:background="@drawable/background_image"
+    android:fillViewport="true">
 
-    <!-- Título -->
-    <TextView
-        android:id="@+id/participantsTitle"
-        android:text="Gestión de Participantes"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="@color/red_festive"
-        android:gravity="center"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp" />
+        android:padding="16dp">
 
-    <!-- RecyclerView para mostrar participantes -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/participantsRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:scrollbars="vertical" />
+        <!-- Título -->
+        <TextView
+            android:id="@+id/participantsTitle"
+            android:text="Gestión de Participantes"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_festive"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
 
-    <!-- Botón para añadir participantes -->
-    <Button
-        android:id="@+id/addParticipantButton"
-        android:text="Añadir Participante"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:textSize="20sp"
-        android:backgroundTint="@color/green_tree"
-        android:textColor="@color/white"
-        android:layout_marginTop="16dp" />
-</LinearLayout>
+        <!-- RecyclerView para mostrar participantes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/participantsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para añadir participantes -->
+        <Button
+            android:id="@+id/addParticipantButton"
+            android:text="Añadir Participante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:backgroundTint="@color/green_tree"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

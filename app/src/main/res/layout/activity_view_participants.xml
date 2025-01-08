@@ -1,27 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@drawable/background_image">
+    android:background="@drawable/background_image"
+    android:fillViewport="true">
 
-    <!-- Título -->
-    <TextView
-        android:id="@+id/tv_exchange_title"
-        android:text="Participantes del intercambio"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/red_festive"
-        android:gravity="center"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp" />
+        android:padding="16dp">
 
-    <!-- RecyclerView para mostrar los participantes -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view_participants"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
-</LinearLayout>
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tv_exchange_title"
+            android:text="Participantes del intercambio"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_festive"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- RecyclerView para mostrar los participantes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</ScrollView>
