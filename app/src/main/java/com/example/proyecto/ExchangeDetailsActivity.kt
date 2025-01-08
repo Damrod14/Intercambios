@@ -65,10 +65,14 @@ class ExchangeDetailsActivity : AppCompatActivity() {
                     if (assignedPerson != null) {
                         val details = """
                         Nombre del intercambio: ${exchange.nombre}
-                        Persona asignada para regalar: $assignedPerson
+                        
+                        Integrante asignado: $assignedPerson
+                        
                         Presupuesto: ${exchange.presupuesto} pesos
+                        
                         Fecha: ${exchange.fecha}
-                        Temas: ${exchange.temas.joinToString(", ")}
+                        
+                        Tematica: ${exchange.temas.joinToString(", ")}
                     """.trimIndent()
 
                         exchangeDetailsTextView.text = details
@@ -76,7 +80,7 @@ class ExchangeDetailsActivity : AppCompatActivity() {
                         exchangeDetailsTextView.text = "No se encontró a quién regalar en este intercambio."
                     }
                 } else {
-                    exchangeDetailsTextView.text = "Usuario no encontrado en Firestore."
+                    exchangeDetailsTextView.text = "Usuario no encontrado en Firesbase."
                 }
             }
             .addOnFailureListener {

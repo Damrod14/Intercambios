@@ -8,6 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
+        <TextView
+            android:id="@+id/app_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="20dp"
+            android:text="Ver Intercambios"
+            android:textColor="@color/red_festive"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/green_tree" />
 
         <!-- RecyclerView para mostrar intercambios -->
         <androidx.recyclerview.widget.RecyclerView
@@ -17,17 +33,31 @@
             android:layout_marginBottom="16dp"
             android:scrollbars="vertical" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/green_tree" />
+
         <!-- Detalles del intercambio -->
         <TextView
             android:id="@+id/exchangeDetailsTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Detalles del intercambio"
-            android:textSize="20sp"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp"
             android:textStyle="bold"
             android:textColor="@color/red_festive"
             android:padding="8dp"
             android:layout_marginBottom="16dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/green_tree" />
 
         <!-- Botón para realizar sorteo -->
         <Button
@@ -39,7 +69,7 @@
             android:padding="12dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/green_tree"
-            android:textColor="?attr/colorOnSecondary" />
+            android:textColor="@color/white" />
 
         <!-- Botón para ver intercambio -->
         <Button
@@ -51,18 +81,19 @@
             android:padding="12dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/green_tree"
-            android:textColor="?attr/colorOnSecondary" />
+            android:textColor="@color/white" />
 
         <!-- Botón para volver -->
         <Button
             android:id="@+id/backButton"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Volver"
+            android:layout_gravity="end"
+            android:padding="16dp"
             android:textSize="18sp"
-            android:padding="12dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="50dp"
             android:backgroundTint="@color/red_festive"
-            android:textColor="?attr/colorOnPrimary" />
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>

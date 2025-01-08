@@ -10,32 +10,55 @@
         android:id="@+id/join_exchange_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Unirse a un intercambio"
-        android:textSize="32sp"
-        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Crear Intercambio"
         android:textColor="@color/red_festive"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="24dp" />
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/green_tree" />
+    <TextView
+        android:text="Ingrese el Identificador del intercambio"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red_festive" />
 
     <!-- Campo para ingresar la clave del intercambio -->
     <EditText
         android:id="@+id/join_exchange_code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Clave del intercambio"
+        android:hint="Identificador del intercambio"
         android:padding="16dp"
         android:textSize="18sp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/green_tree"
         android:layout_marginBottom="24dp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/green_tree" />
     <!-- Botón para confirmar -->
     <Button
         android:id="@+id/btn_confirm_join"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
         android:text="Unirse"
         android:padding="16dp"
         android:textSize="20sp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="@color/red_festive"
         android:textColor="?attr/colorOnPrimary" />
 </LinearLayout>

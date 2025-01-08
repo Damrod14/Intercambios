@@ -20,6 +20,7 @@
             android:textStyle="bold"
             android:textColor="@color/red_festive"
             android:gravity="center"
+            android:layout_marginTop="25dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +37,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:padding="16dp"
+            android:layout_marginTop="100dp"
             android:backgroundTint="@color/white">
 
             <LinearLayout
@@ -60,16 +62,20 @@
         <!-- Botón Regresar -->
         <Button
             android:id="@+id/backButton"
-            android:layout_width="0dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Regresar"
+            android:layout_gravity="end"
+            android:layout_marginTop="50dp"
             android:backgroundTint="@color/red_festive"
-            android:textColor="?attr/colorOnPrimary"
-            android:textSize="20sp"
-            android:padding="12dp"
-            app:layout_constraintTop_toBottomOf="@id/detailsCard"
+            android:padding="16dp"
+            android:text="Volver"
+            android:textColor="@color/white"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/detailsCard"
+            app:layout_constraintVertical_bias="0.694" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -128,12 +128,18 @@ class ViewExchangesActivity : AppCompatActivity() {
         viewExchangeButton.isEnabled = exchange.sorteoRealizado
 
         val details = """
-            Nombre: ${exchange.nombre}
+            Intercambio: ${exchange.nombre}
+            
             Participantes: $detallesParticipantes
+            
             Presupuesto Máximo: ${exchange.presupuesto} pesos
+            
             Fecha Límite de Registro: ${exchange.fecha}
-            Temas: $detallesTemas
-            Estado del sorteo: $exchangeStatus
+            
+            Tematica: $detallesTemas
+            
+            Status del sorteo: $exchangeStatus
+            
         """.trimIndent()
 
         exchangeDetailsTextView.text = details

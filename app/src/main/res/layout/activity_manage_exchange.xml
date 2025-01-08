@@ -10,13 +10,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
+        <TextView
+            android:id="@+id/join_exchange_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="30dp"
+            android:text="Administrar Intercambio"
+            android:textColor="@color/red_festive"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green_tree" />
 
         <!-- Lista de intercambios -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selecciona un intercambio"
-            android:textSize="20sp"
+            android:text="Selecciona uno de los intercambios"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:textColor="@color/red_festive"
             android:layout_marginBottom="8dp" />
@@ -26,15 +44,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:nestedScrollingEnabled="false" />
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green_tree" />
         <!-- Lista de participantes -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Eliminar Participantes actuales"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@color/red_festive"
             android:layout_marginBottom="8dp" />
@@ -46,13 +69,18 @@
             android:layout_marginTop="16dp"
             android:scrollbars="vertical"
             android:nestedScrollingEnabled="false" />
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green_tree" />
         <!-- Lista de usuarios no en el intercambio -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Añadir usuarios al intercambio"
-            android:textSize="20sp"
+            android:text="Agregar integrantes al intercambio"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@color/red_festive"
             android:layout_marginBottom="8dp" />
@@ -62,21 +90,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
             android:scrollbars="vertical"
             android:nestedScrollingEnabled="false" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green_tree" />
         <!-- Botón para mostrar diálogo de añadir participantes -->
         <Button
             android:id="@+id/btn_show_add_participant_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Añadir Participantes"
+            android:text="Ver lista integrantes"
             android:textSize="20sp"
             android:padding="12dp"
             android:layout_margin="16dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/green_tree"
-            android:textColor="?attr/colorOnSecondary" />
+            android:textColor="@color/white" />
 
         <!-- Botón para añadir usuarios seleccionados -->
         <Button
@@ -88,7 +122,7 @@
             android:padding="12dp"
             android:layout_margin="16dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/green_tree"
-            android:textColor="?attr/colorOnSecondary" />
+            android:backgroundTint="@color/red_festive"
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>

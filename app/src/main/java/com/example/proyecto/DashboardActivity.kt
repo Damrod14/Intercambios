@@ -40,8 +40,8 @@ class DashboardActivity : AppCompatActivity() {
         val currentUser = auth.currentUser
         if (currentUser != null) {
             // Mostrar el nombre del usuario
-            val userName = currentUser.displayName ?: "Usuario"
-            userNameTextView.text = "Bienvenido, $userName"
+            val userName = currentUser.displayName ?: "Damian"
+            userNameTextView.text = " Bienvenido "
         } else {
             // Si no hay usuario autenticado, redirigir al login
             val intent = Intent(this, MainActivity::class.java)

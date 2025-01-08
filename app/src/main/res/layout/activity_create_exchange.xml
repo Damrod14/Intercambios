@@ -25,6 +25,7 @@
             android:textSize="60sp"
             android:textStyle="bold" />
 
+
         <!-- Subtítulo -->
         <TextView
             android:id="@+id/app_subtitle"
@@ -36,6 +37,11 @@
             android:textColor="@color/red_festive"
             android:textSize="40sp"
             android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/green_tree" />
 
         <!-- Campos del formulario -->
         <EditText
@@ -50,7 +56,7 @@
 
         <EditText
             android:id="@+id/exchangeDateEditText"
-            android:hint="Fecha (dd/mm/aaaa)"
+            android:hint="Fecha (Formato: dd/mm/aaaa)"
             android:inputType="date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +67,7 @@
 
         <EditText
             android:id="@+id/exchangeTimeEditText"
-            android:hint="Hora (hh:mm)"
+            android:hint="Hora (Formato: hh:mm)"
             android:inputType="time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,7 +88,7 @@
 
         <EditText
             android:id="@+id/exchangeKeyEditText"
-            android:hint="Clave"
+            android:hint="Identificador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
@@ -92,7 +98,7 @@
 
         <EditText
             android:id="@+id/exchangeBudgetEditText"
-            android:hint="Presupuesto Máximo (MXN)"
+            android:hint="Presupuesto"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +109,7 @@
 
         <EditText
             android:id="@+id/exchangeThemesEditText"
-            android:hint="Temas (separados por comas)"
+            android:hint="Temática (separados por comas)"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
@@ -112,13 +118,19 @@
             android:backgroundTint="@color/green_tree" />
 
         <!-- Selección de usuarios -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/green_tree"
+            android:layout_marginTop="10dp"/>
         <TextView
-            android:text="Selecciona a los usuarios para el intercambio"
-            android:textSize="20sp"
+            android:text="Elige los integrantes del intercambio"
+            android:textSize="25sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:gravity="center"
+            android:layout_marginTop="20dp"
             android:textColor="@color/red_festive" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -127,13 +139,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/green_tree"
+            android:layout_marginTop="10dp"/>
+
         <!-- Botón para guardar el intercambio -->
         <Button
             android:id="@+id/saveExchangeButton"
             android:text="Guardar Intercambio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:textSize="20dp"
             android:backgroundTint="@color/red_festive"
             android:textColor="?attr/colorOnPrimary" />

@@ -129,21 +129,15 @@ class CreateExchangeActivity : AppCompatActivity() {
                 for (user in selectedUsers) {
                     sendEmail(
                         user.correo,
-                        "Invitación al intercambio: $nombreIntercambio",
+                        "Invitación intercambio: $nombreIntercambio",
                         """
                         Hola ${user.nombre},
 
-                        ¡Has sido invitado al intercambio "$nombreIntercambio"!
-
-                        Detalles del intercambio:
-                        Fecha: $fecha
-                        Hora: $hora
-                        Lugar: $lugar
-                        Presupuesto: $presupuesto MXN
-
-                        Clave para unirte: $clave
-
-                        ¡Esperamos verte pronto!
+                        Esta es una invitacion  al intercambio $nombreIntercambio!
+                        Identificador: $clave
+                        El intercambio será el día :"$fecha"
+                        A las: $hora En: $lugar
+                        Presupuesto será de: $presupuesto pesos
                         """.trimIndent()
                     )
                 }
